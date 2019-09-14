@@ -957,10 +957,16 @@ namespace Markdown.Xaml
             }
             {
                 var tableHeader = new TableRow();
-                foreach (var headerColTxt in headers)
+                foreach (var headerItemIdx in Enumerable.Range(0, headers.Length))
                 {
+                    var headerColTxt = headers[headerItemIdx];
+
                     var headerParagraph = Create<Paragraph, Inline>(RunSpanGamut(headerColTxt));
                     var headerCell = new TableCell(headerParagraph);
+                    if (aligns[headerItemIdx].HasValue)
+                    {
+                        headerCell.TextAlignment = aligns[headerItemIdx].Value;
+                    }
 
                     tableHeader.Cells.Add(headerCell);
                 }
@@ -969,7 +975,7 @@ namespace Markdown.Xaml
                     tableHeader.Cells.Add(new TableCell());
                 }
                 tableHeaderRG.Rows.Add(tableHeader);
-            }
+			}
             table.RowGroups.Add(tableHeaderRG);
 
             // row
