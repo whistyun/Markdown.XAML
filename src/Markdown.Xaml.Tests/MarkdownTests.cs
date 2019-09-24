@@ -34,7 +34,8 @@ namespace Markdown.Xaml.Tests
         }
 
         [Test]
-        public void Transform_givenTables_generatesExpectedResult() {
+        public void Transform_givenTables_generatesExpectedResult()
+        {
             var text = LoadText("Tables.md");
             var markdown = new Markdown();
             var result = markdown.Transform(text);

@@ -290,7 +290,10 @@ namespace Markdown.Xaml
             foreach (var g in grafs)
             {
                 var block = Create<Paragraph, Inline>(RunSpanGamut(g));
-                block.Style = this.NormalParagraphStyle;
+                if (NormalParagraphStyle != null)
+                {
+                    block.Style = this.NormalParagraphStyle;
+                }
                 yield return block;
             }
         }
@@ -448,7 +451,7 @@ namespace Markdown.Xaml
                 imgSource.UriCachePolicy = new RequestCachePolicy(RequestCacheLevel.BypassCache);
                 imgSource.CacheOption = BitmapCacheOption.OnLoad;
                 imgSource.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
-                imgSource.UriSource = new Uri(url);
+                imgSource.UriSource = new Uri(url, UriKind.RelativeOrAbsolute);
                 imgSource.EndInit();
             }
             catch (Exception)
