@@ -32,71 +32,145 @@
   <BlockUIContainer>
     <Separator />
   </BlockUIContainer>
-  <Paragraph xml:space="preserve"> - - -</Paragraph>
+  <Paragraph />
+  <List MarkerStyle="Circle">
+    <ListItem>
+      <List MarkerStyle="Circle">
+        <ListItem>
+          <Paragraph>-</Paragraph>
+        </ListItem>
+      </List>
+    </ListItem>
+  </List>
   <Paragraph>Asterisks:</Paragraph>
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
-  <Paragraph> <Italic>*</Italic></Paragraph>
+  <Paragraph xml:space="preserve"> ***</Paragraph>
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
-  <Paragraph xml:space="preserve"> * * *</Paragraph>
+  <Paragraph />
+  <List MarkerStyle="Disc">
+    <ListItem>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph>*</Paragraph>
+        </ListItem>
+      </List>
+    </ListItem>
+  </List>
   <Paragraph>Underscores:</Paragraph>
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
-  <Paragraph> <Italic>_</Italic></Paragraph>
+  <Paragraph xml:space="preserve"> ___</Paragraph>
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+      <Separator />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph xml:space="preserve"> _ _ _</Paragraph>
 </FlowDocument>

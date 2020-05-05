@@ -56,10 +56,13 @@
     </ListItem>
   </List>
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph>Pluses tight:</Paragraph>
-  <List MarkerStyle="Disc">
+  <List MarkerStyle="Box">
     <ListItem>
       <Paragraph>Plus 1</Paragraph>
     </ListItem>
@@ -71,7 +74,7 @@
     </ListItem>
   </List>
   <Paragraph>Pluses loose:</Paragraph>
-  <List MarkerStyle="Disc">
+  <List MarkerStyle="Box">
     <ListItem>
       <Paragraph>Plus 1</Paragraph>
     </ListItem>
@@ -83,10 +86,13 @@
     </ListItem>
   </List>
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph>Minuses tight:</Paragraph>
-  <List MarkerStyle="Disc">
+  <List MarkerStyle="Circle">
     <ListItem>
       <Paragraph>Minus 1</Paragraph>
     </ListItem>
@@ -98,7 +104,7 @@
     </ListItem>
   </List>
   <Paragraph>Minuses loose:</Paragraph>
-  <List MarkerStyle="Disc">
+  <List MarkerStyle="Circle">
     <ListItem>
       <Paragraph>Minus 1</Paragraph>
     </ListItem>
@@ -174,7 +180,12 @@
   <Paragraph Tag="Heading2">Nested</Paragraph>
   <List MarkerStyle="Disc">
     <ListItem>
-      <Paragraph>Tab * Tab * Tab</Paragraph>
+      <Paragraph>Tab</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph>Tab * Tab</Paragraph>
+        </ListItem>
+      </List>
     </ListItem>
   </List>
   <Paragraph>Here's another:</Paragraph>
@@ -183,7 +194,18 @@
       <Paragraph>First</Paragraph>
     </ListItem>
     <ListItem>
-      <Paragraph>Second: * Fee * Fie * Foe</Paragraph>
+      <Paragraph>Second:</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph>Fee</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>Fie</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>Foe</Paragraph>
+        </ListItem>
+      </List>
     </ListItem>
     <ListItem>
       <Paragraph>Third</Paragraph>
@@ -195,7 +217,18 @@
       <Paragraph>First</Paragraph>
     </ListItem>
     <ListItem>
-      <Paragraph>Second: * Fee * Fie * Foe</Paragraph>
+      <Paragraph>Second:</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph>Fee</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>Fie</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>Foe</Paragraph>
+        </ListItem>
+      </List>
     </ListItem>
     <ListItem>
       <Paragraph>Third</Paragraph>
@@ -205,8 +238,12 @@
   <List MarkerStyle="Disc">
     <ListItem>
       <Paragraph>this</Paragraph>
-      <Paragraph xml:space="preserve"> * sub</Paragraph>
-      <Paragraph xml:space="preserve"> that</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph>sub</Paragraph>
+          <Paragraph xml:space="preserve"> that</Paragraph>
+        </ListItem>
+      </List>
     </ListItem>
   </List>
 </FlowDocument>

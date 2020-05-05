@@ -19,8 +19,9 @@ namespace Markdown.Xaml
         */
         static void LoadXaml()
         {
+            var resourceName = "Markdown.Xaml.Markdown.Style.xaml";
             Assembly asm = Assembly.GetCallingAssembly();
-            using (var stream = asm.GetManifestResourceStream("Markdown.Xaml.Markdown.Style.xaml"))
+            using (var stream = asm.GetManifestResourceStream(resourceName))
             {
                 var resources = (ResourceDictionary)XamlReader.Load(stream);
                 _standard = (Style)resources["DocumentStyleStandard"];

@@ -133,5 +133,83 @@
       </TableRow>
     </TableRowGroup>
   </Table>
+  <Table>
+    <Table.Columns>
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+    </Table.Columns>
+    <TableRowGroup Tag="TableHeader">
+      <TableRow>
+        <TableCell TextAlignment="Center">
+          <Paragraph>a</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Left">
+          <Paragraph>b</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>c</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>d</Paragraph>
+        </TableCell>
+        <TableCell />
+        <TableCell />
+      </TableRow>
+    </TableRowGroup>
+    <TableRowGroup Tag="TableBody">
+      <TableRow Tag="OddTableRow">
+        <TableCell ColumnSpan="3" TextAlignment="Center">
+          <Paragraph>A</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph />
+        </TableCell>
+        <TableCell ColumnSpan="2" RowSpan="4">
+          <Paragraph>C</Paragraph>
+        </TableCell>
+      </TableRow>
+      <TableRow Tag="EvenTableRow">
+        <TableCell TextAlignment="Center">
+          <Paragraph>1</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Left">
+          <Paragraph>2</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>3</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>4</Paragraph>
+        </TableCell>
+      </TableRow>
+      <TableRow Tag="OddTableRow">
+        <TableCell TextAlignment="Center">
+          <Paragraph>あ</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Left">
+          <Paragraph>い</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>う</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>え</Paragraph>
+        </TableCell>
+      </TableRow>
+      <TableRow Tag="EvenTableRow">
+        <TableCell ColumnSpan="2" TextAlignment="Center">
+          <Paragraph>a</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>b</Paragraph>
+        </TableCell>
+        <TableCell />
+      </TableRow>
+    </TableRowGroup>
+  </Table>
   <Paragraph />
 </FlowDocument>

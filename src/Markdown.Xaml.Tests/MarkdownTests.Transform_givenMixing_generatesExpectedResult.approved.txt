@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-16"?>
 <FlowDocument Style="{x:Null}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <Paragraph Tag="Heading1">Markdown.Xaml</Paragraph>
-  <Paragraph>Markdown XAML is a port of the popular <Italic>MarkdownSharp</Italic> Markdown processor, but with one very significant difference: Instead of rendering to a string containing HTML, it renders to a FlowDocument suitable for embedding into a WPF window or usercontrol.</Paragraph>
+  <Paragraph>Markdown XAML is a port of the popular <Italic Tag="Italic">MarkdownSharp</Italic> Markdown processor, but with one very significant difference: Instead of rendering to a string containing HTML, it renders to a FlowDocument suitable for embedding into a WPF window or usercontrol.</Paragraph>
   <Paragraph Tag="Heading2">Features</Paragraph>
   <Paragraph>MarkDown.Xaml has a number of convenient features</Paragraph>
   <List MarkerStyle="Disc">
@@ -174,7 +174,10 @@ int main()
     </ListItem>
   </List>
   <BlockUIContainer>
-    <Separator />
+    <StackPanel>
+      <Separator Margin="0,0,0,0" />
+      <Separator Margin="0,0,0,0" />
+    </StackPanel>
   </BlockUIContainer>
   <Paragraph />
   <List MarkerStyle="Disc">
